@@ -4,9 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Formulario de Registro</title>
 </head>
 <body>
-    
+    <form action=# method="POST">
+        <header> <h1 align="center">Formulario de Registro</h1> </header>
+        <fieldset>
+            <legend>Categoria Personal</legend>
+
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" id="nombre" placeholder="John" pattern="[A-Za-z]{4-16}" >
+
+            <label for="cumpleanios">Fecha de Cumpleaños: </label>
+            <input type="date" name="cumpleanios" id="cumpleanios">
+
+            <label for="animal">Animal Favorito: </label> 
+            <input type="text" name="animal" id="animal" placeholder="Perro" pattern="[A-Za-z]{4-16}">        
+        </fieldset>
+        <br>    
+        <fieldset>
+            <legend>Cuenta</legend>
+
+            <label for="correo">Correo: </label>
+            <input type="text" name="correo" id="correo" placeholder="john@example.com" pattern="[A-Za-z]{4-16}">
+
+            <label for="contra">Contraseña: </label>
+            <input type="password" name="contra" id="contra" required>
+
+            <label for="contra2">Verificar Contraseña: </label>
+            <input type="password" name="contra2" id="contra2" required>
+        </fieldset>
+        <br>    
+        <fieldset>
+            <legend>Contacto</legend>
+
+            <label for="direccion">Dirección: </label>
+            <input type="text" name="direccion" id="direccion">
+
+            <label for="ciudad">Ciudad: </label>
+            <input type="text" name="ciudad" id="ciudad" pattern="[A-Za-z]{4-16}">
+            
+            <label for="pais">País: </label>
+            <input type="text" name="pais" id="pais" pattern="[A-Za-z]{4-16}">
+
+            <label for="numero">Teléfono celular: </label> 
+            <input type="tel" name="numero" id="numero" placeholder="1234-5678" pattern="[0-9]{8}">
+
+        </fieldset>
+        <br>        
+        <input type="submit" value="Enviar">
+        </form>
 </body>
 </html>
